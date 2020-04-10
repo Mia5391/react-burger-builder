@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Button from '../../../components/UI/Button/Button';
+import classes from './ContactData.module.css'
 
 
 class ContactData extends Component {
@@ -14,13 +15,13 @@ class ContactData extends Component {
 
     render () {
         return (
-            <div>
+            <div className={classes.ContactData}>
                 <h4>Please enter your contact details:</h4>
                 <form>
-                    <input type="text" name="name" placeholder="Your name" />
-                    <input type="text" name="email" placeholder="Your email" />
-                    <input type="text" name="streetname" placeholder="Streetname" />
-                    <input type="text" name="postal" placeholder="Postcode" />
+                    <input className={classes.Input} type="text" name="name" placeholder="Your name" />
+                    <input className={classes.Input} type="text" name="email" placeholder="Your email" />
+                    <input className={classes.Input} type="text" name="streetname" placeholder="Streetname" />
+                    <input className={classes.Input} type="text" name="postal" placeholder="Postcode" />
                     <Button buttonType="Success">ORDER</Button>
                 </form>
             </div>
